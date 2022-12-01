@@ -1,0 +1,98 @@
+
+$font-family-uno: 'Bebas Neue', cursive;
+$font-family-dos: 'Carrois Gothic SC', sans-serif;
+$font-family-tres: 'Hind', sans-serif;
+$font-family-cuatro: 'Notable', sans-serif;
+$font-family-cinco: 'Syne Mono', monospace;
+
+
+.banner {
+    width: 100%;
+    min-height: 200px;
+    background-image: url('./assets/Logo.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: relative;
+  }
+  
+  .banner::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+  }
+  
+  
+  .results {
+      display: flex;
+      flex-wrap: wrap;
+    }
+  
+    .results article {
+      width: calc(100% / 5 - 2 * 10px);
+      color: gray;
+      display: flex;
+      flex-direction: column;
+      margin: 0 10px 40px;
+      cursor: pointer;
+    }
+
+    @media (max-width: 600px) {
+      .results article {
+        width: calc(100% / 2 - 2 * 10px);
+      }
+    }
+  
+    .results article .img-container {
+      flex-grow: 1;
+      border-bottom: 4px solid #ed1d23;
+      overflow: hidden;
+    }
+  
+    .results article .img-container img {
+      width: 100%;
+      height: auto;
+      box-shadow: 0 26px 24px -16px rgba(0, 0, 0, 0.4);
+      margin-bottom: 10px;
+      transform: translateY(0);
+      transition: 0.2s;
+    }
+  
+    .card:hover .comic-thumbnail {
+      transform: translateY(-10px);
+    }
+    
+    .card:hover .card__title {
+      color: #151515;
+    }
+
+    .card:hover .character-thumbnail {
+      transform: scale(1.1);
+    }
+
+    .card__title {
+      font-family: $font-family-tres;
+    }
+    
+    .character-name-container {
+      padding: 16px 24px 17px 20px;
+      background-color: #151515;
+      transition: 0.2s;
+    }
+      
+    .section-title {
+      font-family: $font-family-cuatro;
+    }
+
+    .labels {
+      font-family: $font-family-dos;
+      font-size: 20px;
+    }
+
+    h4 {
+      font-family: $font-family-cinco
+    }

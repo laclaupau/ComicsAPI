@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+      integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+      crossorigin="anonymous"/>
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Carrois+Gothic+SC&family=Hind&family=Notable&family=Syne+Mono&display=swap" rel="stylesheet">
+
+
+
+    <title>Marvel🦸‍♀️Mania</title>
+</head>
+
+<body>
+  <header>
+    <div class="banner"></div>
+  </header>
+  
+    <h2 class="section-title">Search</h2>
+    <form>
+      
+        <label class="labels" for="type-filter">type</label>
+        <select name="type-filter" id="type-filter">
+          <option value="comics">Comics</option>
+          <option value="characters">Characters</option>
+        </select>
+
+        <label class="labels" for="type-filter">order</label>
+        <select name="sort-filter" id="sort-filter">
+          <option value="descent">A-Z</option>
+          <option value="ascent">Z-A</option>
+          <option value="latest">Latest</option>
+          <option value="oldest">Oldest</option>
+      </select>
+
+      <input type="text" name="search-field" id="search-field"> 
+
+      <button type="button" id="search-btn">SEARCH</button>
+
+    </form>
+
+    <section class="results-section">
+      <h2 class="section-title">Results</h2>
+      <p class="results-count"></p>
+
+      <div class="results"></div>
+
+      <div id="characters"></div>
+
+
+        <div class="pagination">
+            <button
+              type="button"
+              class="first-page pagination-button"
+              aria-label="Página previa"
+            >
+              <i class="fas fa-angle-double-left" aria-hidden="true"></i>
+            </button>
+            <button
+              type="button"
+              class="previous-page pagination-button"
+              aria-label="Página Anterior"
+            >
+              <i class="fas fa-angle-left" aria-hidden="true"></i>
+            </button>
+            <button
+              type="button"
+              class="next-page pagination-button"
+              aria-label="Siguiente Página"
+            >
+              <i class="fas fa-angle-right" aria-hidden="true"></i>
+            </button>
+            <button
+              type="button"
+              class="last-page pagination-button"
+              aria-label="Última página"
+            >
+              <i class="fas fa-angle-double-right" aria-hidden="true"></i>
+            </button>
+          </div>
+
+
+    </section>
+
+    <script src="./index.js"></script>
+</body>
+
+</html>
